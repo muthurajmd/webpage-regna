@@ -2,6 +2,7 @@
 <html>
 <head>
     <title> Regna </title>
+	<link rel ="icon" href = "img/fav.jpeg" type ="image/icon">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/responsive.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +16,7 @@
 <body>
      <header id="head">
         <div class="container">
-	         <div class="row">
+	         <div class="row" style="align-items:center">
 			 <div class="col-3 col-sm-4 col-md-6">
 			 <div class="headimg">
                 <a href="index.html">
@@ -25,21 +26,55 @@
 	              <div class="navpar"> 
                     <ul class="namelist">
 					   <li><a href="#Home">Home</a></li>
-					   <li><a href="#">About</a></li>
-					   <li><a href="#">Services</a></li>
-					   <li><a href="#">Portfolio</a></li>
-					   <li><a href="#">Team</a></li>
-					   <li><a href="#">Drop Down</a><i class="bi bi-chevron-down" style="color:white;"></i></li>
-					   <li><a href="#">Contact</a></li>
+					   <li><a href="#head2">About</a></li>
+					   <li><a href="#fact22">Services</a></li>
+					   <li><a href="#portfolio1">Portfolio</a></li>
+					   <li><a href="#teamhead1">Team</a></li>
+					   <!-- <li><a href="#">Drop Down</a><i class="bi bi-chevron-down" style="color:white;"></i></li>						   -->
+					   
+					   
+					   
+					    <li class="dropdown-head"><a href="#">Drop Down</a><i style="color:white" class="bi bi-chevron-down"></i>
+					      <ul class="dropdown-list">
+							   <li><a href="#Home">Drop down-1</a></li>
+							   <li><a href="#">Drop down-2</a></li>
+							   <li><a href="#">Drop down-3</a></li>
+							   <li class="dropdown-head1"><a href="#">Deep Drop Down</a>
+							   <ul class="dropdown-list1">
+							   <li><a href="#Home">Drop down-1</a></li>
+							   <li><a href="#">Drop down-2</a></li>
+							   <li><a href="#">Drop down-3</a></li>
+							   <li><a href="#">Drop down-4</a></li>
+							   <li><a href="#">Drop down-5</a></li>
+					       </ul></li>
+							   <li><a href="#">Drop down-5</a></li>
+					       </ul></li>
+					   
+					   <li><a href="#contact">Contact</a></li>
 					 </ul>  
 				 </div>
 			 </div>	 
 			 <div class="col-2 col-sm-8 gs-but disnone col-md-6">
-				 <i class="bi bi-list"></i>
+				 <i class="bi bi-list" onclick="selectcard()"></i>
 			 </div>	 
 		</div>
 		</div>
 	</header>
+	<section class="order d-none ss allow vh-100">
+			<ul class="mobile">
+				<li><a href="#Home" onclick="remove()">Home</a></li>
+				<li><a href="#head2" onclick="remove()">About</a></li>
+				<li><a href="#fact22" onclick="remove()">Services</a></li>
+				<li><a href="#portfolio1" onclick="remove()">Portfolio</a></li>
+				<li><a href="#teamhead1" onclick="remove()">Teams</a></li>
+				<li><a href="#contact" onclick="remove()">Contact</a></li>
+			  </ul>  
+				
+		
+				
+			
+			</section>
+    <section id="Home">
     <section id="leading">
 			 <div class="container">
 			 <div class="content">
@@ -49,11 +84,12 @@
 			   </div>
 			   </div>
 			   </section>
+			   </section>
 	
 	<!-- section 2 -->
 	<section id="head2">
 	    <div class="container">
-	        <div class="row">
+	        <div class="row" style="margin-top:25px">
 	           	<div class="col-6 col-sm-12 order-2 col-md-12"> 
 				    <div class="flex1">
 				        <div class="headclass">
@@ -136,7 +172,7 @@
 	</section>	
 	<section id="fact22">
 	    <div class="container">
-		     <div class="facthead">
+		     <div class="facthead" style="margin-top:25px">
 			     <h3 class="facttitle">SERVICES</h3>
 				  <p class="description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
 		     </div>
@@ -217,7 +253,7 @@
       </section>	
 	 <section id="portfolio1">
 	    <div class="container">
-		     <div class="porthead">
+		     <div class="porthead" style="margin-top:25px">
 			     <h3 class="porttitle">Portfolio</h3>
 				  <p class="portdescription">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
 		     </div>	   
@@ -285,7 +321,7 @@
      </section>	
      <section id="teamhead1">
 	    <div class="container">
-		     <div class="teamhead12">
+		     <div class="teamhead12" style="margin-top:50px">
 			     <h3 class="porttitle">Team</h3>
 				  <p class="portdescription">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
 		     </div>	   
@@ -349,7 +385,7 @@
      </section>	
              <section id="contact">
 	         <div class="container">
-		     <div class="cont-head">
+		     <div class="cont-head" style="margin-top:50px">
 			     <h3 class="cont-title">Contact</h3>
 				  <p class="cont-description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
 		     </div>
@@ -428,5 +464,6 @@
       </div>
     </div>
   </footer>
+  <script src="js/main.js"></script>  
 </body>
 </html>	
