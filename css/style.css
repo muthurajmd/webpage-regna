@@ -380,7 +380,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .col-4 .portfolio-img img{
 	width:100%;
-	padding:25px 0px;
+	/* padding:25px 0px; */
 	/* gap:2%; */
 }
 #teamhead1{
@@ -590,4 +590,39 @@ h1, h2, h3, h4, h5, h6 {
 
 .d-none{
 	display:none;
+}
+.port-head{
+	padding:25px 10px;
+	/* margin:5px */
+	
+}
+.portfolio-info{
+	position: absolute;
+    width: 100%;
+	height:100%;
+    top: 0px;
+    padding: 0px 0px;
+    line-height: 1;
+    background-color: #000000a3;
+	visibility: hidden;
+	/* display:none; */
+	transform:translatey(90px);
+	transition:all .6s ease-in-out;
+}
+.portfolio-list:hover .portfolio-info{
+	visibility:visible;
+	/* display:block; */
+	transform:translatey(0px);
+	transition:all .4s ease-in-out;
+	
+}
+
+.port-head .portfolio-img{
+	overflow:hidden;
+	
+}
+
+.port-head .portfolio-img:hover img{
+	transform:scale(1.1);
+	transition:all .5s ease;
 }
